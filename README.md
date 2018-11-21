@@ -25,11 +25,15 @@ File name                            | File description
 - Execute `packer validate template.json` to validates `template.json` file, after executing the command it should return `Template validated successfully` message. 
 - Execute `packer build template.json`  to start building the virtual machine you need to run your tests on. 
 - After that you should see this message `mysql64-vbox: 'virtualbox' provider box: mysql64-vbox.box` which means that the VM box was created successfully.
-- Execute `vagrant box list` to see the list of `vagrant` boxes.
-- Execute `vagrant box add --name mysql64 mysql64-vbox.box` to add the newly created `packer` box. 
-- Execute `vagrant init mysql64` to create Vagrantfile if one doesn't already exist.  
-- Execute `vagrant up` command to power up the VM.
-- Execute `vagrant ssh` to log in to the VM.
+
+Command execution                    | Command result
+------------------------------------ | --------------------------------------------------------------
+`vagrant box list` | to see the list of `vagrant` boxes.
+`vagrant box add --name mysql64 mysql64-vbox.box` | to add the newly created `packer` box. 
+`vagrant init mysql64` | to create Vagrantfile if one doesn't already exist.  
+`vagrant up` | to power up the VM.
+`vagrant ssh` | to log in to the VM.
+
 - Execute `sudo service mysql status` to see if `mysql` server is installed and runing, the output will display the following:
 ```
 mysql.service - MySQL Community Server
@@ -82,11 +86,14 @@ Successfully installed bundler-1.17.1
 ```
 
 ### Commands needed to test with `kitchen`.
-- Execute `bundle exec kitchen list` to list `kitchen` instances.
-- Execute `bundle exec kitchen converge` to create `kitchen` environment.
-- Execute `bundle exec kitchen verify` command to execute `kitchen` test.
-- Execute `bundle exec kitchen destroy` to destroy `kitchen` environment.
-- Execute `bundle exec kitchen test` to automatically build, test and destroy `kitchen` environment.
+
+Command execution                    | Command result
+------------------------------------ | --------------------------------------------------------------
+`bundle exec kitchen list` | to list `kitchen` instances.
+`bundle exec kitchen converge` | to create `kitchen` environment.
+`bundle exec kitchen verify` | command to execute `kitchen` test.
+`bundle exec kitchen destroy` | to destroy `kitchen` environment.
+`bundle exec kitchen test` | to automatically build, test and destroy `kitchen` environment.
 
 ### TO DO:
 - Check if `mysql` server is installed and running. 
