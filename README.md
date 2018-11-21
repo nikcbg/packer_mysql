@@ -24,7 +24,8 @@ File name                            | File description
 - Go to the cloned repo on your computer: `cd packer_mysql64`.
 - Execute `packer validate template.json` to validates `template.json` file, after executing the command it should return `Template validated successfully` message. 
 - Execute `packer build template.json`  to start building the virtual machine you need to run your tests on. 
-- After that you should see this message `mysql64-vbox: 'virtualbox' provider box: mysql64-vbox.box` which means that the VM box was created successfully.
+- You should see this message `mysql64-vbox: 'virtualbox' provider box: mysql64-vbox.box` which means that the VM box was created successfully.
+- After that execute the commands in teh table below.
 
 Command execution                    | Command result
 ------------------------------------ | --------------------------------------------------------------
