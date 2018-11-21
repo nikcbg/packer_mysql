@@ -25,9 +25,9 @@ File name                            | File description
 - Execute `packer validate template.json` to validates `template.json` file, after executing the command it should return `Template validated successfully` message. 
 - Execute `packer build template.json`  to start building the virtual machine you need to run your tests on. 
 - You should see this message `mysql64-vbox: 'virtualbox' provider box: mysql64-vbox.box` which means that the VM box was created successfully.
-- After that execute the commands in teh table below.
+- After that execute the commands in the table below.
 
-Command execution                    | Command result
+Command execution                    | Command outcome
 ------------------------------------ | --------------------------------------------------------------
 `vagrant box list` | to see the list of `vagrant` boxes.
 `vagrant box add --name mysql64 mysql64-vbox.box` | to add the newly created `packer` box. 
@@ -88,7 +88,7 @@ Successfully installed bundler-1.17.1
 
 ### Commands needed to test with `kitchen`.
 
-Command execution                    | Command result
+Command execution                    | Command outcome
 ------------------------------------ | --------------------------------------------------------------
 `bundle exec kitchen list` | to list `kitchen` instances.
 `bundle exec kitchen converge` | to create `kitchen` environment.
