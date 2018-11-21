@@ -5,14 +5,16 @@
 
 #### List of files in the repository
 
-- `http/preseed.cfg` - script that automatically installs Ubuntu.
-- `scripts/provision.sh` - script that installs `mysql`.
-- `template.json` - template with code for `packer` to create the image we want.
-- `test/integration/default/check_pkg.rb` - script needed by `kitchen` to check if `mysql` is installed. 
-- `test/integration/default/gen.sh` - script needed by `kitchen` to check if `mysql` is installed. 
-- `.gitignore` - which files and directories to ignore.
-- `.kitchen.yml` - testing framework used by `ruby`.
-- `Gemfile` - used for `ruby` dependencies.
+File name                            | File description 
+------------------------------------ | --------------------------------------------------------------
+`http/preseed.cfg` | script that automatically installs Ubuntu.
+`scripts/provision.sh` | script that installs `mysql`.
+`template.json` | template with code for `packer` to create the image we want.
+`test/integration/default/check_pkg.rb` | script needed by `kitchen` to check if `mysql` is installed. 
+`test/integration/default/gen.sh` | script needed by `kitchen` to check if `mysql` is installed. 
+`.gitignore` | which files and directories to ignore.
+`.kitchen.yml` | testing framework used by `ruby`.
+`Gemfile`  | used for `ruby` dependencies.
 
 ### How to use this repository. 
 - Install `virtualbox` by following this [instructions](https://www.virtualbox.org/wiki/Downloads).
